@@ -24,5 +24,9 @@ public class SpringHelloWorldForOpenShiftDemoApplication {
 	public String getHelloMessage(@PathVariable("name") String name) {
 		return "Welcome " + name +" on open shift deployment";
 	}
-
+	
+	@GetMapping("/sayhello/{name}")
+	public String sayHelloToGit(@PathVariable("name") String name) {
+		return "Welcome to GIT and Jenkins deployement by " + name;
+	}
 }
