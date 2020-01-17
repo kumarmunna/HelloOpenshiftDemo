@@ -12,7 +12,7 @@ spec:
   source:
     git:
       ref: master
-      uri: "https://github.com/AdamBien/statustest.git"
+      uri: "https://github.com/kumarmunna/HelloOpenshiftDemo.git"
     type: Git
   strategy:
     type: JenkinsPipeline
