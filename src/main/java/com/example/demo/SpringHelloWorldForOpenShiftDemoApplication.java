@@ -19,6 +19,11 @@ public class SpringHelloWorldForOpenShiftDemoApplication {
 		return "Hello World";
 	}
 	
+	@GetMapping("/*")
+	public String getDefaultHelloMessage() {
+		return "Default Hello World";
+	}
+	
 	
 	@GetMapping("/hello/{name}")
 	public String getHelloMessage(@PathVariable("name") String name) {
